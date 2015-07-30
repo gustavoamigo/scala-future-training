@@ -8,7 +8,11 @@ object FutureExecutionContextTraining extends App{
 
   val threadPoolExecutor  = Executors.newFixedThreadPool(10, new NamedThreadFactory("training"))
   implicit val executionContext: ExecutionContext = ExecutionContext.fromExecutorService(threadPoolExecutor)
-  val future = Future { println(s"My thread is ${Thread.currentThread().getName()}") ; "Done" }
+  val future =
+    Future {
+      println(s"My thread is ${Thread.currentThread().getName}"); "Done"
+    }
+
 
   future
     .map(println)
