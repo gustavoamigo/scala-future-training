@@ -55,8 +55,8 @@ object FutureTraining extends App {
   }
 
   def test5 = {
-    val future1 = Future  { Thread.sleep(5) ; "This is 2015" }
-    val future2 = Future  { Thread.sleep(5) ; "This is 2016" }
+    val future1 = Future  { Thread.sleep(5) ; "This is 2016" }
+    val future2 = Future  { Thread.sleep(5) ; "This is 2017" }
 
     // Nasty ugly example, pandas dies whenever you do this
     future1.onSuccess{ case str1 =>

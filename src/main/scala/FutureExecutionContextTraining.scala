@@ -1,7 +1,6 @@
 import java.util.concurrent.Executors
 
 import util.NamedThreadFactory
-import scala.concurrent.ExecutionContext.Implicits.global
 
 import scala.concurrent.{ExecutionContext, Future}
 
