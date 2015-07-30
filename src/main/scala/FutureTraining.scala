@@ -5,7 +5,6 @@ import scala.async.Async._
 
 object FutureTraining extends App {
 
-
   def test1 = {
     val future = Future { Thread.sleep(10) ; "This is the future" }
 
@@ -66,6 +65,8 @@ object FutureTraining extends App {
       }
     }
   }
+
+
 
   test1
 
